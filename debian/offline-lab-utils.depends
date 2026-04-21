@@ -1,0 +1,15 @@
+bind9-dnsutils
+bind9-host
+bsdutils
+dos2unix
+file
+htop
+iftop
+jo
+jq
+lsof
+moreutils
+ncdu
+rsync
+strace
+zoxide

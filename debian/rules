@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+
+PACKAGES         := $(shell dh_listpackages)
+BINARY_ARCH_PKGS := $(PACKAGES:=.binary-arch)
+SUBSTVARS        := $(PACKAGES:=.substvars)
+
+
+
+%:
+	dh $@
+
+
+
+override_dh_auto_build: build-substvars
+	dh_auto_build
+
+override_dh_gencontrol:
+	dh_gencontrol -- -Tdebian/substvars 2>&1 | (grep -v 'unused substitution variable' || /bin/true)
+
+
+
+###
+# Substvars
+###
+
+build-substvars: clean-substvars $(SUBSTVARS)
+
+clean-substvars:
+	echo -n > debian/substvars
+
+%.substvars:
+	@touch debian/substvars
+	@debian/gendepends $*
+
+override_dh_clean:
+	dh_clean
+	-rm -f debian/substvars
+
+
+
+.PHONY: build-substvars clean-substvars

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+package="${1}"
+
+if [[ -z "${package}" ]]; then
+    echo "Usage: ${0} [packagename]"
+fi
+
+if [[ -e "debian/${package}.depends" ]]; then
+    variable="${package}:Depends"
+    value=$(perl -e 'my @lines = <>; chomp @lines; map { s/#.*//; } @lines; print join ", ", grep { /\S/ } @lines;' <"debian/${package}.depends")
+
+    echo "${variable}=${value}" >>debian/substvars
+fi
