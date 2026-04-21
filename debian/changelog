@@ -1,5 +1,6 @@
-offline-lab-meta (1) unstable; urgency=high
+offline-lab-meta (1) stable; urgency=medium
 
+  [ Root ]
   * Initial release
 
- -- Root <info@offline-lab.com>  Tue, 21 Apr 2024 11:23:34 +0100
+ -- root <info@offline-lab.com>  Tue, 21 Apr 2026 21:31:34 +0000

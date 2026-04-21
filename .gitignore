@@ -1,0 +1,8 @@
+*.deb
+*.changes
+*.buildinfo
+debian/.debhelper/
+debian/offline-lab-*/
+debian/files
+debian/substvars
+dist/
