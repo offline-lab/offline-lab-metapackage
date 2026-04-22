@@ -16,7 +16,7 @@ Package: offline-lab-raspi-core
 Architecture: all
 Section: misc
 Priority: optional
-Depends: ${offline-lab-utils:Depends}
+Depends: ${offline-lab-raspi-core:Depends}
 Description: Core firmware packages for offline-lab raspi images
 
 Package: offline-lab-utils
