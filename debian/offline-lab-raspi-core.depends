@@ -1,6 +1,4 @@
 firmware-brcm80211
-raspberrypi-net-mods
-raspberrypi-sys-mods
 raspi-config
 raspi-utils
 rpi-loop-utils
