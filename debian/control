@@ -10,9 +10,14 @@ Architecture: all
 Section: misc
 Priority: optional
 Depends: ${offline-lab-base:Depends}
-Description: Selection of base packages for offline lab pi image
- This package will depend on a selected set of packages that are needed for
- correct behaviour.
+Description: Base packages for offline-lab raspi images
+
+Package: offline-lab-raspi-core
+Architecture: all
+Section: misc
+Priority: optional
+Depends: ${offline-lab-utils:Depends}
+Description: Core firmware packages for offline-lab raspi images
 
 Package: offline-lab-utils
 Architecture: all
@@ -20,5 +25,3 @@ Section: misc
 Priority: optional
 Depends: ${offline-lab-utils:Depends}
 Description: Selection of utils for offline lab pi image
- This package will depend on a selected set of packages that together provide
- enough utils for debugging the image.

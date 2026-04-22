@@ -19,7 +19,6 @@ dosfstools
 e2fsprogs
 ethtool
 firewalld
-firmware-brcm80211
 flashrom
 fzf
 gawk
@@ -65,14 +64,7 @@ python3
 python3-pip
 python3-venv
 python3-yaml
-raspberrypi-net-mods
-raspberrypi-sys-mods
-raspi-config
-raspi-firmware
-raspi-utils
 rfkill
-rpi-loop-utils
-rpi-usb-gadget
 smbclient
 sqlite3
 squashfs-tools
@@ -84,9 +76,6 @@ systemd-resolved
 systemd-sysv
 systemd-timesyncd
 tree
-u-boot-menu
-u-boot-rpi
-u-boot-tools
 udev
 unzip
 usb-modeswitch
