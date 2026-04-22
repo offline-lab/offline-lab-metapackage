@@ -1,3 +1,10 @@
+offline-lab-meta (2) stable; urgency=medium
+
+  [ Offline Lab ]
+  * Add core raspi firmware package
+
+ -- root <info@offline-lab.com>  Wed, 22 Apr 2026 18:52:50 +0000
+
 offline-lab-meta (1) stable; urgency=medium
 
   [ Root ]
