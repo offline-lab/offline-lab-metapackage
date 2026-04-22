@@ -1,3 +1,10 @@
+offline-lab-meta (3) stable; urgency=medium
+
+  [ Offline Lab ]
+  * Fix missing deps
+
+ -- root <info@offline-lab.com>  Wed, 22 Apr 2026 20:29:10 +0000
+
 offline-lab-meta (2) stable; urgency=medium
 
   [ Offline Lab ]
