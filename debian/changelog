@@ -1,3 +1,10 @@
+offline-lab-meta (4) stable; urgency=medium
+
+  [ Offline Lab ]
+  * Remove net and sys tools
+
+ -- root <info@offline-lab.com>  Wed, 22 Apr 2026 22:03:16 +0000
+
 offline-lab-meta (3) stable; urgency=medium
 
   [ Offline Lab ]
